@@ -1,5 +1,6 @@
 import requests
 
+# Dùng trực tiếp webhook bạn cung cấp
 WEBHOOK_URL = "https://discord.com/api/webhooks/1468337671041581168/vII1Ke1qLMf_Cus3D7j51puPUShPTNU574Zs7E5VxmGEIQ4qT5Eyx9KVfHDNCZpcFvvU"
 
 def send_message():
