@@ -1,7 +1,10 @@
 name: Hello Discord
 
+# Chạy mỗi 5 phút
 on:
-  workflow_dispatch:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:  # cũng có thể chạy thủ công
 
 jobs:
   send:
@@ -16,5 +19,3 @@ jobs:
       - run: pip install requests
 
       - run: python main.py
-        env:
-          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
