@@ -20,7 +20,7 @@ def send_message(message):
 
 def send_initial_note():
     """Gửi note ban đầu 1 lần"""
-    note = "HELLO, testing. Auto scan, auto send, repeat 5m, BTC/USD EMA9 crossed above EMA20! Price"
+    note = "HELLO, testing. Auto scan, auto send, repeat 5m, BTC/USD EMA9 crossed above EMA20!. Price: {price:.2f}"
     send_message(note)
 
 def check_ema():
