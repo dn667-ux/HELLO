@@ -16,8 +16,8 @@ def get_price(symbol):
     if df.empty:
         print(f"No data for {symbol}")
         return None
-    # Convert to float
-    return float(df["Close"].iloc[-1])
+    # Lấy giá cuối cùng đúng scalar
+    return df["Close"].iat[-1]  # iat[-1] trả về scalar float
 
 if __name__ == "__main__":
     btc_price = get_price("BTC-USD")
