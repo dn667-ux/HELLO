@@ -44,6 +44,6 @@ def check_btc_ema():
         send_message(f"🚨 BTC/USD EMA9 crossed above EMA20! Price: {last['Close']:.2f}")
 
 if __name__ == "__main__":
-    send_message("HELLO, testing. Auto scan, auto send, repeat 5m")
+    send_message("✔ Sends price BTC‑USD - ✔ Sends price SPY - ✔ Then checks BTC EMA crossover → Alert if crossover - Every 5 minutes GitHub Actions runs automatically")
     send_prices()
     check_btc_ema()
