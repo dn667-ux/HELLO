@@ -5,7 +5,7 @@ WEBHOOK_URL = "https://discord.com/api/webhooks/1468337671041581168/vII1Ke1qLMf_
 
 def send_message():
     data = {
-        "content": "HELLO, testing"
+        "content": "HELLO, testing. Auto scan, auto send, repeat 5m"
     }
     response = requests.post(WEBHOOK_URL, json=data)
     if response.status_code == 204:
